@@ -19,7 +19,7 @@ namespace capacitorlimited
         private Sandbox.ModAPI.IMyBatteryBlock Capacitor;
         private int triggerTick = 0;
         private const double OFFSET_DISTANCE = 3;
-        private const int COUNTDOWN_SECONDS = 5 * 60; // 5 seconds in game time
+        private const int COUNTDOWN_SECONDS = 30 * 60; // 5 seconds in game time
 
         public override void Init(MyObjectBuilder_EntityBase objectBuilder)
         {
@@ -46,10 +46,19 @@ namespace capacitorlimited
                 {
                     DoExplosion();
                 }
+                else if (triggerTick % 60 == 0) // Show notification every second
+                {
+                    int remainingSeconds = COUNTDOWN_SECONDS - triggerTick;
+                    int seconds = remainingSeconds / 60;
+                    string name = Capacitor.CustomName;
+                    string message = string.Format("Capacitor ({0}) explodes in {1} seconds", name, seconds);
+
+                    MyVisualScriptLogicProvider.ShowNotificationLocal(message, 1000, "Red");
+                }
             }
             else
             {
-                //triggerTick = 0; // Reset countdown if in recharge mode
+                triggerTick = 0; // Reset countdown if in recharge mode
             }
         }
 
