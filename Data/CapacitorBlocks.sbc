@@ -8,7 +8,8 @@
       </Id>
       <DisplayName>Capacitor</DisplayName>
       <Icon>Textures\GUI\Icons\Capacitor.dds</Icon>
-      <Description>Has a reserve of power that can discharge</Description>
+      <Description>Has a reserve of power that can discharge
+      It must be set to "Discharge" or "Auto" to provide power. Setting it back to "Rechage" pauses the timer.</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="4" z="3" />
