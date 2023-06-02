@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<CubeBlocks>
+  <CubeBlocks>
     <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
       <Id>
         <TypeId>BatteryBlock</TypeId>
@@ -8,8 +8,10 @@
       </Id>
       <DisplayName>Capacitor</DisplayName>
       <Icon>Textures\GUI\Icons\Capacitor.dds</Icon>
-      <Description>Has a reserve of power that can discharge
-      It must be set to "Discharge" or "Auto" to provide power. Setting it back to "Rechage" pauses the timer.</Description>
+      <Description>
+        Has a reserve of power that can discharge
+        It must be set to "Discharge" or "Auto" to provide power. Setting it back to "Rechage" pauses the timer.i se
+      </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="4" z="3" />
@@ -36,12 +38,12 @@
       <BuildTimeSeconds>40</BuildTimeSeconds>
 
       <ResourceSourceGroup>Battery</ResourceSourceGroup>
-      <MaxPowerOutput>12</MaxPowerOutput>
+      <MaxPowerOutput>1000</MaxPowerOutput>
 
       <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
       <RequiredPowerInput>12</RequiredPowerInput>
       <AdaptibleInput>true</AdaptibleInput>
-      <MaxStoredPower>3</MaxStoredPower>
+      <MaxStoredPower>1000</MaxStoredPower>
       <InitialStoredPowerRatio>0.3</InitialStoredPowerRatio>
       <RechargeMultiplier>0.8</RechargeMultiplier>
 
