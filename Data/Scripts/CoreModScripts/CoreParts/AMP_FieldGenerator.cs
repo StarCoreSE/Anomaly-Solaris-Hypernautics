@@ -146,7 +146,7 @@ namespace Scripts
                     PreFiringSound = "MaxMemeReload", // Audio for warmup effect.
                     FiringSound = "shieldthing_firesound", // Audio for firing.
                     FiringSoundPerShot = true, // Whether to replay the sound for each shot, or just loop over the entire track while firing.
-                    ReloadSound = "", // Sound SubtypeID, for when your Weapon is in a reloading state
+                    ReloadSound = "MaxMemeReload", // Sound SubtypeID, for when your Weapon is in a reloading state
                     NoAmmoSound = "",
                     HardPointRotationSound = "WepTurretGatlingRotate", // Audio played when turret is moving.
                     BarrelRotationSound = "WepShipGatlingRotation",
