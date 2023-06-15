@@ -22,8 +22,25 @@
       </Waves>
     </Sound>
     
-
-    
+    <!-- shield thing Sounds -->
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>MaxMemeReload</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>2500</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>35</DynamicMusicAmount>
+      <Volume>1</Volume>
+      <Loopable>false</Loopable>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Krankenschwester_bereit.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
   </Sounds>
 </Definitions>
 
