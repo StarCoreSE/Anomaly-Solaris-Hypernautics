@@ -11,11 +11,12 @@
 			<DisplayName>Goncol MagnaPulse</DisplayName>
 			<Description>
 				Refresh your buddy's shields by manually shooting at it.
+				-Currently in rapid test configuration-
 				Grid limit 1
 				Range: 1.75km technically
 				Heal: 12-20 mill shields (surface area dependent)
-				Reload Charge: 1 gigawatt
-				Relaod Time: 2 minutes
+				Reload Charge: 0.095 gigawatt
+				Relaod Time: 10 seconds
 			</Description>
 			<Icon>Textures\GUI\Icons\LargeArcEmitter.dds</Icon>
 			<CubeSize>Large</CubeSize>
